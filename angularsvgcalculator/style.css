@@ -1,0 +1,92 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,700|Open+Sans+Condensed:700);
+
+#myCalculator { margin: 0; padding: 0; font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300; line-height: 24px;
+    max-width: 800px; }
+#mycalculator main{background-color: #444;}
+#mycalculator main section{
+    width: 25%;
+    float: left;
+    text-align: center;
+    padding-top: 18%;
+    color: #ffffff;
+    background-repeat: no-repeat;
+    background-position: center 4%;
+    background-size: 30% 40%;
+}
+#mycalculator main::after{content:'';display: block;clear: both}
+
+#mycalculator main section.inc{background-color: #ba2d2d; background-image: url("images/bulb_inc.svg")}
+
+
+#mycalculator main section.hal{background-color: #de6615; background-image: url("images/bulb_hal.svg")}
+
+#mycalculator main section.cfl{background-color: #efc20f; background-image: url("images/bulb_cfl.svg")}
+#mycalculator main section.led{background-color: #36b23c; background-image: url("images/bulb_led.svg")}
+
+#mycalculator main section > div {
+    padding: 1% 0;background-color: rgba(0,0,0,0.15);
+}
+
+#mycalculator main h4{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: .8em;
+    letter-spacing: 1px;
+    margin: 0 0 1% 0;
+    text-transform: uppercase;
+}
+#mycalculator main p{margin: 0;font-size: 1.5em; font-weight: 700;}
+#mycalculator main p+p{font-size: 0.8em; font-weight: 300;}
+#mycalculator main p::after {content:'w';}
+#mycalculator main p+p::before {content:'$';}
+#mycalculator main p+p::after{content:'per year'; color: rgba(255,255,255,0.5); padding-left: 1%;}
+
+#mycalculator form{
+    background-color: #000;
+    margin: 0; padding: 5% 0px;
+}
+#mycalculator form br {display: none;}
+
+#mycalculator form > div{
+    color: #fff;
+    width: 33%;
+    float: left;
+    text-align: center;
+    padding: 5% 0 2.5% 0;
+}
+#mycalculator form::after {content:'';display: block; clear: both;}
+
+#mycalculator form h4{
+    color: #aaa;
+    margin: 0 0 -5px 0;
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+#mycalculator form p {
+    color: #888;
+    margin: 0 0 6px 0;
+    font-size: 0.9em;
+}
+
+#mycalculator form input[type=number]
+{
+    width: 50px;
+    text-align: left;
+    font-size: 1em;
+    background:#cccccc;
+}
+#mycalculator form select{
+    font-size: 1em;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance:none;
+    background:#ccc url("images/icons_arrows.svg") no-repeat right 6px;
+    background-size: 30px 20px;
+    padding: 3px 30px 3px 5px;
+}
+
+#mycalculator form select::-ms-expand{display: none;}
