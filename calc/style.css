@@ -1,0 +1,36 @@
+.calculator{
+    width: 25%;
+    margin-top: 2.5%;
+}
+input{
+    border: 0px;
+    text-align: center;
+}
+.heading{
+    margin-top: 2.5%;
+}
+.row
+{
+    margin-bottom: 4%;
+}
+.btn{
+    width:100%;
+}
+.big-btn{
+    width: 100%;
+}
+@media all and (max-width:1200px) {
+    .calculator{
+        width:35%;
+    }
+}
+@media screen and (max-width: 768px){
+    .calculator{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 582px) {
+    .calculator{
+        width: 70%;
+    }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+<h3 class="heading" align="center">Calculator</h3>
+<form name="calculator">
+<div class="container calculator text-center">
+  <div class="row">
+      <div class="panel panel-default">
+          <input class="panel-body" type="text" name="display" readonly>
+      </div>
+  </div>
+  <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><button type="button" class="btn btn-default" name="AC" id="clear">AC</button></div>
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><button type="button" class="btn btn-default" name="+/-" id="neg">+/-</button></div>
+      <!--<div class="col-lg-3"><button type="button" class="btn btn-default" name="clear" id="trunc">C</button></div>-->
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><button type="button" class="btn btn-default op" name="%" id="mod">%</button> </div>
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><button type="button" class="btn btn-warning op" name="/" id="/">/</button> </div>
+  </div>
+    <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><button type="button" class="btn btn-default num" name="7" id="7">7</button></div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><button type="button" class="btn btn-default num" name="8" id="8">8</button></div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><button type="button" class="btn btn-default num" name="9" id="9">9</button> </div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><button type="button" class="btn btn-warning op" name="X" id="X">X</button> </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><button type="button" class="btn btn-default num" name="4" id="4">4</button></div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><button type="button" class="btn btn-default num" name="5" id="5">5</button></div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><button type="button" class="btn btn-default num" name="6" id="6">6</button> </div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><button type="button" class="btn btn-warning op" name="-" id="-">-</button> </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><button type="button" class="btn btn-default num" name="1" id="1">1</button></div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><button type="button" class="btn btn-default num" name="2" id="2">2</button></div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><button type="button" class="btn btn-default num" name="3" id="3">3</button> </div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><button type="button" class="btn btn-warning op" name="+" id="+">+</button> </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><button type="button" class="btn btn-default big-btn num" name="0" id="0">0</button></div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><button type="button" class="btn btn-default" name="." id="dot">.</button> </div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><button type="button" class="btn btn-warning" name="=" id="equal">=</button> </div>
+    </div>
+</div>
+</form>
+</body>
+</html>
